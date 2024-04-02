@@ -1,0 +1,93 @@
+body {
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+
+h1{
+    font-weight: 700;
+}
+header >div,
+header .navbar,
+footer{
+    display: flex;
+}
+
+header{
+    border-radius: 12px;
+    padding: 2rem;
+    background-image: repeating-linear-gradient(-45deg, #302f2f, #302f2f 6px, #2a2929 0, #2a2929 12px);
+
+}
+header>div{
+    justify-content: space-between;
+
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+main{
+    margin-top: 2rem;
+}
+main>section{
+    background-color: #ededed;
+    border-radius: 16px;
+    padding: 3rem;
+}
+h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width:320px) {
+    .navbar{
+        font-size: 1rem;
+    }
+    .navbar a{
+        padding: 0 1rem;
+        
+    }
+    .logo{
+        max-height: 70px;
+    }
+    footer img{
+        max-height: 25px;
+    }
+}
+@media screen and (min-width:768px) {
+    .navbar{
+        font-size: 1.2rem;
+    }
+    .navbar a{
+        padding: 0 2rem;
+    }
+    .logo{
+        max-height: 100px;
+    }
+    footer img{
+        max-height: 40px;
+    }
+    
+}

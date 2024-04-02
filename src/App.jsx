@@ -7,7 +7,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1>Super Mario characters</h1>
+      <main>
+        <section className='container'>
+          <h1>Super Mario characters</h1>
+
+        </section>
+      </main>
       <Footer />
     </>
   )
