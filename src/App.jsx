@@ -9,6 +9,8 @@ function App() {
   return (
     <>
       <Navbar />
+    <main>
+        <section className='container'>
       <h1>Super Mario characters</h1>
       <ul>
         <CardList>
@@ -16,6 +18,8 @@ function App() {
           <CardBadBoy></CardBadBoy>
         </CardList>
       </ul>
+        </section>
+      </main>
       <Footer />
     </>
   )
