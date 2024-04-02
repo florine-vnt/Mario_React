@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import { marioCharacters } from './data.js';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 
