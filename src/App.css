@@ -1,93 +1,172 @@
 body {
-  font-family: "Catamaran", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
 }
 
-h1{
+h1 {
     font-weight: 700;
 }
-header >div,
+
+header>div,
 header .navbar,
-footer{
+footer {
     display: flex;
 }
 
-header{
+header {
     border-radius: 12px;
     padding: 2rem;
     background-image: repeating-linear-gradient(-45deg, #302f2f, #302f2f 6px, #2a2929 0, #2a2929 12px);
 
 }
-header>div{
+
+header>div {
     justify-content: space-between;
 
 }
-.navbar{
+
+.navbar {
     list-style: none;
 }
-.navbar li{
+
+.navbar li {
     display: flex;
     align-items: center;
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: #fff;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: auto;
     width: 100%;
 }
-main{
+
+main {
     margin-top: 2rem;
 }
-main>section{
+
+main>section {
     background-color: #ededed;
     border-radius: 16px;
     padding: 3rem;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 0;
 }
+.icon-click{
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.itemContainer {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    opacity: 0;
+    animation-name: apparition;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+/* duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name  */
 
-footer{
+.flex-container>.itemContainer:first-child {
+    animation-delay: 0.6s;
+}
+
+.flex-container>.itemContainer:last-child {
+    animation-delay: 1s;
+
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(O);
+        opacity: 1;
+    }
+
+}
+
+footer {
     justify-content: center;
     align-items: center;
     padding: 2rem;
 }
 
 @media screen and (min-width:320px) {
-    .navbar{
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .navbar {
         font-size: 1rem;
     }
-    .navbar a{
+
+    .navbar a {
         padding: 0 1rem;
-        
+
     }
-    .logo{
+
+    .itemContainer {
+        padding: 2rem;
+        flex: 1;
+    }
+
+    .itemContainer img {
+        max-height: 200px;
+    }
+
+    .logo {
         max-height: 70px;
     }
-    footer img{
+
+    footer img {
         max-height: 25px;
     }
 }
+
 @media screen and (min-width:768px) {
-    .navbar{
+    .flex-container {
+        display: flex;
+    }
+
+    .navbar {
         font-size: 1.2rem;
     }
-    .navbar a{
+
+    .navbar a {
         padding: 0 2rem;
     }
-    .logo{
+
+    .logo {
         max-height: 100px;
     }
-    footer img{
+
+    footer img {
         max-height: 40px;
     }
-    
+
 }
