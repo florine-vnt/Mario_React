@@ -1,10 +1,11 @@
-function CardBadBoy({ dataCharacter }) {
-    let { characterImage, characterName, characterDescription, isGood } = dataCharacter
+function CardGoodBoy({ dataCharacter }) {
+    let { characterImage, characterName, characterDescription, } = dataCharacter
 
     return (
         <section className="itemContainer">
             <figure>
                 <img src={characterImage} alt="Character" />
+                <div>Good Boy</div>
                 <h2>{characterName}</h2>
                 <p>{characterDescription}</p>
                 <button></button>
@@ -15,4 +16,4 @@ function CardBadBoy({ dataCharacter }) {
     )
 }
 
-export default CardBadBoy;
+export default CardGoodBoy;
