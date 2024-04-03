@@ -13,10 +13,9 @@ function App() {
         <section className='container'>
       <h1>Super Mario characters</h1>
       <ul>
-        <CardList>
-          <CardGoodBoy></CardGoodBoy>
-          <CardBadBoy></CardBadBoy>
-        </CardList>
+        <CardList/>
+      
+      
       </ul>
         </section>
       </main>
