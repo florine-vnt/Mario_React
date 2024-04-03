@@ -1,3 +1,18 @@
+
+:root {
+    --color-white:#fff;
+    --color-black: #070707;
+    --color-blue: #0058bc;
+    --color-grey: #5a5a5a;
+    --color-grey-2: #d8d8d8;
+    --color-dark-grey: #302f2f;
+    --color-light-grey: #f0f0f0;
+    --color-red: #e70112;
+    --color-white: #fff;
+    --color-yellow: #ffdf02;
+    --color-focus-yellow: #ffd324;
+    --mario-red: #e60012;
+}
 body {
     font-family: "Catamaran", sans-serif;
     font-optical-sizing: auto;
@@ -5,7 +20,32 @@ body {
     font-style: normal;
     font-size: 16px;
 }
+.btn{
+    border-radius: 12px;
+    background-color: var(--color-red);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+.btn-grey,
+.btn-disable{
+    background-color: var(--color-light-grey);
+    color: var(--color-grey);
+}
+.btn-disable{
+    opacity: 0.4;
+}
+button.icon-click img{
+    max-height: 80px;
+}
+.result-click{
+    background-color: var(--color-light-grey);
+    padding: 0.5rem 2rem;
+    border-radius: 12px;
+    font-size: 2rem;
 
+}
 h1 {
     font-weight: 700;
 }
@@ -78,6 +118,10 @@ h1 {
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
+.item{
+    text-align: center;
+    min-height: 550px;
+}
 /* duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name  */
 
 .flex-container>.itemContainer:first-child {
@@ -133,6 +177,7 @@ footer {
     .itemContainer {
         padding: 2rem;
         flex: 1;
+        margin: 1rem;
     }
 
     .itemContainer img {
@@ -152,7 +197,14 @@ footer {
     .flex-container {
         display: flex;
     }
-
+    .space-between {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .itemContainer {
+        padding: 2rem;
+        margin: 1rem;
+    }
     .navbar {
         font-size: 1.2rem;
     }
