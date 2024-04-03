@@ -15,8 +15,12 @@ function CardList() {
     return (
         <div className='flex-container'>
             <CardGoodBoy dataCharacter={goodBoys[goodIndex]} />
+            {goodIndex > 0 ? <button onClick={() => setGoodIndex((goodIndex) => goodIndex - 1)}>Previous</button> : ""}
+            {goodIndex < goodBoys.length - 1 ? <button onClick={() => setGoodIndex((goodIndex) => goodIndex + 1)}>Next</button> : ""}
             <CardBadBoy dataCharacter={badBoys[badIndex]} />
-            
+
+            {badIndex > 0 ? <button onClick={() => setBadIndex((badIndex) => badIndex - 1)}>Previous</button> : ""}
+            {badIndex < badBoys.length - 1 ? <button onClick={() => setBadIndex((badIndex) => badIndex + 1)}>Next</button> : ""}
         </div>
     )
 }
