@@ -17,15 +17,15 @@ function CardList() {
             <div className="itemContainer">
                 <CardGoodBoy dataCharacter={goodBoys[goodIndex]} />
                 <div className='flex-container space-between'>
-                    {goodIndex > 0 ? <button className='btn btn-grey' onClick={() => setGoodIndex((goodIndex) => goodIndex - 1)}>Previous</button> : <button className='btn btn-disable' >Previous</button>}
-                    {goodIndex < goodBoys.length - 1 ? <button className='btn' onClick={() => setGoodIndex((goodIndex) => goodIndex + 1)}>Next</button> : ""}
+                    <button className={goodIndex > 0 ? 'btn btn-grey' : 'btn btn-disable'} onClick={goodIndex > 0 ? () => setGoodIndex((goodIndex) => goodIndex - 1) : null}>Previous</button>
+                    <button className={goodIndex < goodBoys.length - 1 ? 'btn' : 'btn btn-disable'} onClick={goodIndex < goodBoys.length - 1  ? () => setGoodIndex((goodIndex) => goodIndex + 1) : null}>Next</button>
                 </div>
             </div>
-            <div className="itemContainer">
+            <div className="itemContainer itemContainerDark">
                 <CardBadBoy dataCharacter={badBoys[badIndex]} />
                 <div className='flex-container space-between'>
-                    {badIndex > 0 ? <button className='btn btn-grey' onClick={() => setBadIndex((badIndex) => badIndex - 1)}>Previous</button> : <button className='btn btn-disable' >Previous</button>}
-                    {badIndex < badBoys.length - 1 ? <button className='btn' onClick={() => setBadIndex((badIndex) => badIndex + 1)}>Next</button> : ""}
+                    <button className={badIndex > 0 ? 'btn btn-grey' : 'btn btn-disable'} onClick={badIndex > 0 ? () => setBadIndex((badIndex) => badIndex - 1) : null}>Previous</button>
+                    <button className={badIndex < badBoys.length - 1 ? 'btn' : 'btn btn-disable'} onClick={badIndex < badBoys.length - 1  ? () => setBadIndex((badIndex) => badIndex + 1) : null}>Next</button>
                 </div>
             </div>
         </div>
