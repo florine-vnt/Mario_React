@@ -44,7 +44,7 @@ button.icon-click img{
     padding: 0.5rem 2rem;
     border-radius: 12px;
     font-size: 2rem;
-
+    color:#2a2929;
 }
 h1 {
     font-weight: 700;
@@ -118,9 +118,18 @@ h1 {
     animation-fill-mode: both;
     animation-iteration-count: 1;
 }
+.itemContainerDark {
+    background-color: #3f3f3f;
+    color: #ededed;
+
+}
 .item{
     text-align: center;
-    min-height: 550px;
+    min-height: 500px;
+}
+
+.description {
+   min-height: 100px;
 }
 /* duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name  */
 
@@ -159,6 +168,7 @@ footer {
 
     h2 {
         font-size: 2.8rem;
+        margin: 1rem 0;
     }
 
     h3 {
