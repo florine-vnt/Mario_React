@@ -13,11 +13,11 @@ function CardList() {
 
 
     return (
-        <>
+        <div className='flex-container'>
             <CardGoodBoy dataCharacter={goodBoys[goodIndex]} />
             <CardBadBoy dataCharacter={badBoys[badIndex]} />
             
-        </>
+        </div>
     )
 }
 

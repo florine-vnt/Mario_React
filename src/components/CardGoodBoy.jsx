@@ -2,17 +2,11 @@ function CardGoodBoy({ dataCharacter }) {
     let { characterImage, characterName, characterDescription, } = dataCharacter
 
     return (
-        <section className="itemContainer">
-            <figure>
-                <img src={characterImage} alt="Character" />
-                <div>Good Boy</div>
-                <h2>{characterName}</h2>
-                <p>{characterDescription}</p>
-                <button></button>
-                <button></button>
-            </figure>
-
-        </section>
+        <figure className="itemContainer">
+            <img src={characterImage} alt={characterName} />
+            <h2>{characterName}</h2>
+            <p>{characterDescription}</p>
+        </figure>
     )
 }
 
