@@ -1,5 +1,5 @@
 function CardGoodBoy({ dataCharacter }) {
-    let { characterImage, characterName, characterDescription, } = dataCharacter
+    let { characterImage, characterName, characterDescription } = dataCharacter;
 
     return (
         <section className="itemContainer">
@@ -8,8 +8,6 @@ function CardGoodBoy({ dataCharacter }) {
                 <div>Good Boy</div>
                 <h2>{characterName}</h2>
                 <p>{characterDescription}</p>
-                <button></button>
-                <button></button>
             </figure>
 
         </section>
